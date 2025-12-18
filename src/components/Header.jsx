@@ -59,14 +59,22 @@ const Header = () => {
       {/* CONTACT MODAL */}
       {contactOpen && (
         <div className="fixed inset-0 bg-black/60 z-50 flex justify-center items-center">
-          <div className="bg-white p-6 lg:p-8 rounded-xl relative w-[80%] lg:w-[70%] min-h-[72%] md:min-h-[75%] lg:min-h-[74%]">
+          <div
+            className="relative w-[90%] md:w-[85%] lg:w-[75%] 
+                    h-[75vh] 
+                    bg-[#0b0f14] 
+                    ring-2 ring-white/80 
+                    rounded-xl 
+                    flex flex-col"
+          >
             <button
-              className="absolute top-1 right-2 text-xl"
+              className="absolute top-3 right-3 z-10"
               onClick={() => setContactOpen(false)}
             >
-              <IoClose className="text-3xl text-[#27395f] font-bold" />
+              <IoClose className="text-3xl text-[#27395f] bg-gray-50 hover:bg-gray-200 p-1 rounded-full" />
             </button>
-            <div className="py-2 flex flex-col justify-center items-center gap-3">
+
+            <div className="flex-1 overflow-y-auto px-4 py-6 scrollbar-tactical">
               <ContactUs />
             </div>
           </div>
@@ -76,12 +84,12 @@ const Header = () => {
       {/* LOGIN MODAL */}
       {loginOpen && (
         <div className="fixed inset-0 bg-black/60 z-50 flex justify-center items-center">
-          <div className="bg-white p-6 lg:p-8 rounded-xl relative w-[80%] lg:w-[70%] min-h-[72%] md:min-h-[75%] lg:min-h-[74%]">
+          <div className="bg-white p-6 lg:p-8 rounded-xl relative w-[80%] md:w-[85%] lg:w-[75%] min-h-[72%] md:min-h-[76%] lg:min-h-[74%]">
             <button
               className="absolute top-1 right-2 text-xl"
               onClick={() => setLoginOpen(false)}
             >
-              <IoClose className="text-3xl text-[#27395f] font-bold" />
+              <IoClose className="text-3xl text-[#27395f] font-bold bg-gray-50 hover:bg-gray-200 p-1 rounded-full" />{" "}
             </button>
             <div className="py-2 flex flex-col justify-center items-center gap-3">
               <Login />
@@ -92,5 +100,4 @@ const Header = () => {
     </>
   );
 };
-
 export default Header;

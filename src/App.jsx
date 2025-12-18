@@ -6,6 +6,7 @@ import Defense from "./pages/Defense.jsx";
 import Home from "./pages/Home.jsx";
 import Model from "./pages/Model.jsx";
 import Services from "./pages/Services.jsx";
+import ChatbotButton from "./components/ChatbotButton.jsx";
 
 function App() {
   return (
@@ -16,10 +17,13 @@ function App() {
           <Home />
           <About />
           <Services />
-          <Model/>
-          <Defense/>
+          <Model />
+          <Defense />
         </div>
       </div>
+
+      <ChatbotButton />
+
       <div className="fixed bottom-0 w-full">
         <Navbar />
       </div>

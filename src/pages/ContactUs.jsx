@@ -1,76 +1,85 @@
-import google from "../assets/google.png";
-
-const ContactUs= () => {
+const ContactUs = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full h-12">
-      <div className="w-full h-full space-y-2">
-        <h1 className="text-3xl lg:text-4xl font-bold">Contact Us</h1>
-        <p className="text-sm lg:text-md font-medium">
-          Don't have an account yet? &nbsp;
-          <span className="text-[#2c60d1] font-bold hover:underline">
-            Sign up here
-          </span>
+    <section className="bg-[#0b0b0b] text-white min-h-screen py-6 px-6 md:px-12 lg:px-24 rounded-xl">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold">
+          Contact <span className="text-[#b0be64]">Us</span>
+        </h1>
+        <p className="mt-4 text-gray-400 text-sm md:text-base">
+          Reach out for defense exam guidance, tactical intelligence queries, or
+          platform support.
         </p>
-        <hr className="border-t-2 rounded-full border-black/20 my-3" />
-        <form className="w-full mt-4 space-y-2">
-          <div className="flex justify-between font-medium text-sm lg:text-md">
-            <label htmlFor="email">Email Address </label>
-          </div>
-          <input
-            id="email"
-            type="email"
-            placeholder="Enter email address"
-            className="w-full p-2 rounded ring-1 ring-black/20 outline-none"
-          />
-          <div className="flex justify-between font-medium mt-1 text-sm lg:text-md">
-            <label htmlFor="pwd">Password </label>
-            <p className="text-[#2c60d1] hover:underline font-bold">
-              Forgot password?
-            </p>
-          </div>
-          <input
-            id="pwd"
-            type="password"
-            placeholder="Enter password"
-            className="w-full p-2 rounded ring-1 ring-black/20 outline-none"
-          />
-
-          <div className="flex justify-center my-3">
-            <button className="p-2 text-[#b0be64] bg-[#27395f] rounded-lg font-bold w-full text-md lg:text-lg">
-              Sign In
-            </button>
-          </div>
-
-          <div className="flex justify-center items-center w-full my-4">
-            <hr className="border-t-2 rounded-full border-black/20 w-[28%]" />
-            <p className="px-7 py-1 text-xs font-medium">Or continue with</p>
-            <hr className="border-t-2 rounded-full border-black/20 w-[28%]" />
-          </div>
-
-          <div className="flex flex-col gap-3 justify-center items-center">
-            <button className="text-sm bg-gray-200/50 px-4 py-2 rounded-lg ring ring-gray-400/30 font-medium">
-              <div className="flex items-center justify-center gap-4">
-                <img src={google} alt="Google" className="h-6 w-auto" />
-                <p>Sign in with Google</p>
-              </div>
-            </button>
-
-            <p className="text-xs text-center p-2">
-              By signing in or creating new account, you are agreeing to our{" "}
-              <span className="text-[#2c60d1] hover:underline font-semibold">
-                Terms & Conditions
-              </span>{" "}
-              and our{" "}
-              <span className="text-[#2c60d1] hover:underline font-semibold">
-                Privacy Policy
-              </span>
-              .
-            </p>
-          </div>
-        </form>
       </div>
-      <div></div>
-    </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12">
+        <div className="bg-[#121212] rounded-2xl py-2 px-4 shadow-lg">
+          <h2 className="text-xl md:text-2xl font-semibold mb-1">
+            Get In Touch
+          </h2>
+          <p className="text-sm md:text-md text-gray-400 mb-6 leading-relaxed">
+            We support students preparing for defense examinations and
+            professionals seeking structured tactical knowledge.
+          </p>
+
+          <div className="space-y-4">
+            <div>
+              <p className="text-[#b0be64] font-medium">Email</p>
+              <p className="text-gray-200">support@militaryeducator.in</p>
+            </div>
+
+            <div>
+              <p className="text-[#b0be64] font-medium">Phone</p>
+              <p className="text-gray-200">+91 9XXXXXXXXX</p>
+            </div>
+
+            <div>
+              <p className="text-[#b0be64] font-medium">Location</p>
+              <p className="text-gray-200">Kota, Rajasthan</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-[#121212] rounded-2xl py-2 px-4 shadow-lg">
+          <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
+          <form className="space-y-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full bg-transparent border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#b0be64]"
+              required
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full bg-transparent border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#b0be64]"
+              required
+            />
+
+            <input
+              type="text"
+              placeholder="Subject"
+              className="w-full bg-transparent border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#b0be64]"
+              required
+            />
+
+            <textarea
+              rows="5"
+              placeholder="Your Message"
+              className="w-full bg-transparent border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#b0be64]"
+              required
+            />
+
+            <button
+              type="submit"
+              className="w-full bg-[#b0be64] text-black font-semibold py-2 rounded-lg hover:bg-[#9aaa50] transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   );
 };
 
