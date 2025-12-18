@@ -27,7 +27,6 @@ function App() {
       <div className="fixed bottom-0 w-full">
         <Navbar />
       </div>
-      <Footer />
     </>
   );
 }

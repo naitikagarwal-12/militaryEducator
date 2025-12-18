@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-[#27395f] h-10 flex justify-evenly items-center">
+      <div className="bg-[#1b273e] h-10 flex justify-evenly items-center">
         <img src={logo} alt="Logo" className="h-9 w-auto" />
         {navItems.map((item) => (
           <div key={item.id} className="text-md lg:text-lg xl:text-xl text-white font-bold">
