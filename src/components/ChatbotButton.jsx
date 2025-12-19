@@ -1,27 +1,55 @@
 import { useState } from "react";
 import chatbotLogo from "../assets/chatbotLogo.png";
 import { IoClose } from "react-icons/io5";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const ChatbotButton = () => {
   const [botOpen, setBotOpen] = useState(false);
 
   return (
     <>
+      <div
+        className="scrollUp fixed bottom-21 md:bottom-28 lg:bottom-26 right-1 md:right-3 z-60 p-2 md:p-4 rounded-full
+          bg-white/15 backdrop-blur-xl
+          border border-white/30
+          hover:scale-100
+          hover:bg-white/30 text-white/60 text-2xl
+          md:text-3xl transition-all duration-300"
+      >
+        <FaArrowUpLong />
+      </div>
+
       <button
         onClick={() => setBotOpen((prev) => !prev)}
-        className="z-10 fixed p-2 md:p-3 bg-black rounded-full bottom-7 right-1 md:bottom-5 md:right-2 xl:bottom-3 xl:right-18 cursor-pointer"
+        className="chatTalk fixed bottom-8 lg:bottom-7 right-1 md:right-3
+          z-60 p-0.5 rounded-full
+          bg-white/15 backdrop-blur-xl
+          border border-white/30
+          hover:scale-100
+          hover:bg-white/30
+          transition-all duration-300
+        "
       >
-        <img
-          src={chatbotLogo}
-          alt="ChatbotLogo"
-          className="h-10 md:h-11 xl:h-13 w-auto object-cover"
-        />
+        {botOpen ? (
+          <IoClose className="text-6xl p-3 text-white/60"/>
+        ) : (
+          <img
+            src={chatbotLogo}
+            alt="ChatbotLogo"
+            className="h-10 md:h-16 lg:h-15"
+          />
+        )}
       </button>
 
       {botOpen && (
         <button
           onClick={() => setBotOpen(false)}
-          className="z-100 text-2xl font-bold bg-[#b0be64] hover:bg-black hover:text-[#b0be54] rounded-xl cursor-pointer text-black fixed top-15 left-5 md:hidden"
+          className="
+            fixed top-15 left-5 z-100
+            p-1 text-lg sm:text-xl rounded-full
+            bg-white/30 backdrop-blur-lg
+            border border-white/40
+          "
         >
           <IoClose />
         </button>
@@ -36,22 +64,50 @@ const ChatbotButton = () => {
 
           <div
             className="
-              fixed z-50 bg-white shadow-2xl
+              fixed z-80
               inset-0 md:inset-auto
-              md:bottom-22 md:right-15 xl:right-30
-              md:h-[75%] md:w-[45%]
-              rounded-none md:rounded-2xl
-              overflow-hidden
+              md:bottom-20 md:right-21 md:h-[80%] md:w-[55%] flex items-center justify-center
             "
           >
-            <iframe
-              src="https://cdn.botpress.cloud/webchat/v3.5/shareable.html?configUrl=https://files.bpcontent.cloud/2025/12/17/17/20251217174506-CNFK56K7.json"
-              title="Chatbot"
-              className="w-full h-full border-none"
-            />
+            <div
+              className="
+                absolute inset-0
+                rounded-none md:rounded-2xl
+                p-[1.5px]
+                bg-[linear-gradient(90deg,#b0be64,#22d3ee,#a855f7,#b0be64)]
+                bg-[length:300%_300%]
+                animate-[borderMove_6s_linear_infinite]
+              "
+            >
+              <div
+                className="
+                  w-full h-full
+                  bg-white/60 backdrop-blur-xl
+                  border border-white/30
+                  rounded-none md:rounded-2xl
+                  overflow-hidden
+                "
+              >
+                <iframe
+                  src="https://cdn.botpress.cloud/webchat/v3.5/shareable.html?configUrl=https://files.bpcontent.cloud/2025/12/17/17/20251217174506-CNFK56K7.json"
+                  title="Chatbot"
+                  className="w-full h-full border-none"
+                />
+              </div>
+            </div>
           </div>
         </>
       )}
+
+      <style>
+        {`
+          @keyframes borderMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        `}
+      </style>
     </>
   );
 };

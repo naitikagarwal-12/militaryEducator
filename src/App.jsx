@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import Model from "./pages/Model.jsx";
 import Services from "./pages/Services.jsx";
 import ChatbotButton from "./components/ChatbotButton.jsx";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 function App() {
   return (

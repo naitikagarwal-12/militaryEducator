@@ -1,6 +1,9 @@
 import Button from "../components/Button";
 import Card from "../components/Card";
-import military from "../assets/military.png";
+import img1 from "../assets/services/img1.jpeg";
+import img2 from "../assets/services/img2.jpeg";
+import img3 from "../assets/services/img3.jpeg";
+import img4 from "../assets/services/img4.jpeg";
 
 const Services = () => {
   return (
@@ -11,7 +14,7 @@ const Services = () => {
       <div className="my-7 mt-15 flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4 gap-4 justify-center items-center max-w-[85%]">
           <Card
-            image={military}
+            image={img3}
             content={
               "Our AI quickly finds your weak areas from tests and practice, then creates a personalized plan so you focus only on what matters most to improve faster."
             }
@@ -27,7 +30,7 @@ const Services = () => {
             }
           />
           <Card
-            image={military}
+            image={img2}
             content={
               "Experience defence beyond theory through immersive AR/VR modules that let users explore 3D defence assets and combat scenarios for practical, hands-on understanding."
             }
@@ -44,7 +47,7 @@ const Services = () => {
           />
 
           <Card
-            image={military}
+            image={img1}
             content={
               "Aspirants prepare for SSB through live mock interviews and guidance from retired defence veterans, receiving real-time feedback to improve confidence, psychology, and performance."
             }
@@ -60,7 +63,7 @@ const Services = () => {
             }
           />
           <Card
-            image={military}
+            image={img4}
             content={
               "Track exams and defence events with a smart planner while accessing verified, branch-specific study material and current affairs for Army, Navy, and Air Force preparation."
             }

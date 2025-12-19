@@ -18,7 +18,7 @@ const Home = () => {
           </p>
 
           <div className="w-full mt-7 sm:mt-10 flex justify-center">
-            <div className="w-full sm:w-[90%] md:w-[80%] xl:w-[75%] aspect-video rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]">
+            <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[65%] xl:w-[55%] aspect-video rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]">
               <video
                 autoPlay
                 loop
