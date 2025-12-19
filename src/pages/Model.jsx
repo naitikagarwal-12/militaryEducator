@@ -4,7 +4,7 @@ const Model = () => {
   return (
     <section className="bg-[#5c4e41] text-white p-4">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-bold text-5xl mt-4 lg:text-6xl">AR/VR Model</h1>
+        <h1 className="font-bold text-4xl sm:text-5xl mt-4 lg:text-6xl">AR/VR Model</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-[7fr_3fr]">
         <div className="flex justify-center items-center">

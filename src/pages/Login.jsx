@@ -5,14 +5,14 @@ import { AiOutlineAim } from "react-icons/ai";
 
 const Login = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full h-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
       <div className="w-full h-full space-y-2">
-        <h1 className="text-3xl lg:text-4xl font-bold">Sign In</h1>
-        <p className="text-sm lg:text-md font-medium">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+          Sign In
+        </h1>
+        <p className="text-xs sm:text-sm lg:text-md font-medium">
           Don't have an account yet? &nbsp;
-          <span className="text-[#2c60d1] font-bold hover:underline">
-            Sign up here
-          </span>
+          <span className="text-[#2c60d1] hover:underline">Sign up here</span>
         </p>
         <hr className="border-t-2 rounded-full border-black/20 my-3" />
         <form className="w-full mt-4 space-y-2">
@@ -27,9 +27,7 @@ const Login = () => {
           />
           <div className="flex justify-between font-medium mt-1 text-sm lg:text-md">
             <label htmlFor="pwd">Password </label>
-            <p className="text-[#2c60d1] hover:underline font-bold">
-              Forgot password?
-            </p>
+            <p className="text-[#2c60d1] hover:underline">Forgot password?</p>
           </div>
           <input
             id="pwd"
@@ -39,26 +37,28 @@ const Login = () => {
           />
 
           <div className="flex justify-center my-3">
-            <button className="p-2 text-[#b0be64] bg-[#27395f] rounded-lg font-bold w-full text-md lg:text-lg hover:bg-[#5d6532] hover:text-white">
+            <button className="p-2 text-[#b0be64] bg-[#27395f] rounded-lg font-bold w-full text-sm sm:text-md lg:text-lg hover:bg-[#5d6532] hover:text-white">
               Sign In
             </button>
           </div>
 
           <div className="flex justify-center items-center w-full my-4">
-            <hr className="border-t-2 rounded-full border-black/20 w-[28%]" />
-            <p className="px-7 py-1 text-xs font-medium">Or continue with</p>
-            <hr className="border-t-2 rounded-full border-black/20 w-[28%]" />
+            <hr className="border-t-2 rounded-full border-black/20 w-[18%] sm:w-[25%]" />
+            <p className="px-7 sm:py-1 text-[10px] sm:text-xs font-medium">
+              Or continue with
+            </p>
+            <hr className="border-t-2 rounded-full border-black/20 w-[18%] sm:w-[25%]" />
           </div>
 
           <div className="flex flex-col gap-3 justify-center items-center">
-            <button className="text-sm bg-gray-50 hover:bg-gray-200 px-4 py-2 rounded-lg ring ring-gray-400/30 font-medium">
+            <button className="text-xs sm:text-sm bg-gray-50 hover:bg-gray-200 px-4 py-1 sm:py-2 rounded-lg ring ring-gray-400/30 font-medium">
               <div className="flex items-center justify-center gap-4">
-                <img src={google} alt="Google" className="h-6 w-auto" />
+                <img src={google} alt="Google" className="h-5 sm:h-6 w-auto" />
                 <p>Sign in with Google</p>
               </div>
             </button>
 
-            <p className="text-xs text-center p-2">
+            <p className="text-[10px] sm:text-xs text-center p-2">
               By signing in or creating new account, you are agreeing to our{" "}
               <span className="text-[#2c60d1] hover:underline font-semibold">
                 Terms & Conditions
@@ -73,7 +73,7 @@ const Login = () => {
         </form>
       </div>
       <div className="hidden md:flex">
-        <div className="p-2 relative">
+        <div className="p-2 relative h-full">
           <img
             src={loginHero}
             className="block rounded-3xl h-full w-full object-cover"

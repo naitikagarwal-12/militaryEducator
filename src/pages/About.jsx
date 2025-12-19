@@ -4,8 +4,8 @@ const About = () => {
   return (
     <section className="bg-[#5c4e41] text-white p-5">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-bold text-5xl mt-4 lg:text-6xl">About Us</h1>
-        <p className="text-sm md:text-lg xl:text-xl font-medium mt-7 xl:max-w-[60%] text-center">
+        <h1 className="font-bold text-4xl sm:text-5xl mt-4 lg:text-6xl">About Us</h1>
+        <p className="text-xs sm:text-sm md:text-lg xl:text-xl font-medium mt-7 xl:max-w-[60%] text-center">
           "Military Educator is a pioneering EduTech platform dedicated to
           bridging the gap between defence aspirations and reality."
         </p>

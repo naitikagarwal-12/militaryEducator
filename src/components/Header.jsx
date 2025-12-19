@@ -15,9 +15,9 @@ const Header = () => {
     <>
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center w-full">
-          <div className="p-2 flex justify-center items-center gap-3">
-            <img src={logo} alt="Logo" className="h-16 w-auto" />
-            <div className="text-2xl">
+          <div className="p-2 flex justify-center items-center md:gap-3 gap-1">
+            <img src={logo} alt="Logo" className="h-13 sm:h-16 w-auto" />
+            <div className="text-lg sm:text-xl md:text-2xl">
               <p className="text-[#b0be64] font-bold">Military</p>
               <p className="text-white font-bold">Educator</p>
             </div>
@@ -37,7 +37,7 @@ const Header = () => {
               icon={<FaPhone />}
               event={() => setContactOpen(true)}
               classname={
-                "bg-[#b0be64] text-sm lg:text-md border border-[#27395f]"
+                "bg-[#b0be64] text-xs sm:text-sm lg:text-md border border-[#27395f]"
               }
             >
               Contact Us
@@ -46,7 +46,7 @@ const Header = () => {
               icon={<FaUser />}
               event={() => setLoginOpen(true)}
               classname={
-                "bg-[#b0be64] text-sm lg:text-md border border-[#27395f]"
+                "bg-[#b0be64] text-xs sm:text-sm lg:text-md border border-[#27395f]"
               }
             >
               Login
@@ -84,7 +84,7 @@ const Header = () => {
       {/* LOGIN MODAL */}
       {loginOpen && (
         <div className="fixed inset-0 bg-black/60 z-50 flex justify-center items-center">
-          <div className="bg-white p-6 lg:p-8 rounded-xl relative w-[80%] md:w-[85%] lg:w-[75%] min-h-[72%] md:min-h-[76%] lg:min-h-[74%]">
+          <div className="bg-white p-6 lg:p-8 rounded-xl relative w-[80%] md:w-[85%] lg:w-[75%] h-auto">
             <button
               className="absolute top-1 right-2 text-xl"
               onClick={() => setLoginOpen(false)}

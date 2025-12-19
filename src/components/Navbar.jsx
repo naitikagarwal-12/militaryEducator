@@ -23,9 +23,9 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-[#1b273e] h-10 flex justify-evenly items-center">
-        <img src={logo} alt="Logo" className="h-9 w-auto" />
+        <img src={logo} alt="Logo" className="h-7 sm:h-9 w-auto" />
         {navItems.map((item) => (
-          <div key={item.id} className="text-md lg:text-lg xl:text-xl text-white font-bold">
+          <div key={item.id} className="text-xs sm:text-md lg:text-lg xl:text-xl text-white font-bold">
             {item.title}
           </div>
         ))}

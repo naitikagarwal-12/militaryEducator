@@ -11,16 +11,11 @@ import ChatbotButton from "./components/ChatbotButton.jsx";
 function App() {
   return (
     <>
-      <div className="min-h-screen">
-        <div className="bg-[#27395f] h-[70vh] xl:h-[62vh]">
-          <Header />
-          <Home />
-          <About />
-          <Services />
-          <Model />
-          <Defense />
-        </div>
-      </div>
+      <Home />
+      <About />
+      <Services />
+      <Model />
+      <Defense />
 
       <ChatbotButton />
 

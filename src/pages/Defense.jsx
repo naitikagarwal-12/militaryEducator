@@ -10,7 +10,7 @@ const Defense = () => {
     <>
       <section className="bg-[#b7987d] text-black p-5">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="font-bold text-5xl mt-4 lg:text-6xl">
+          <h1 className="font-bold text-4xl sm:text-5xl mt-4 lg:text-6xl">
             Defense System
           </h1>
         </div>

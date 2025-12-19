@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="bg-[#b7987d] text-black p-5">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-bold text-5xl mt-4 lg:text-6xl">Our Services</h1>
+        <h1 className="font-bold text-4xl sm:text-5xl mt-4 lg:text-6xl">Our Services</h1>
       </div>
       <div className="my-7 mt-15 flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4 gap-4 justify-center items-center max-w-[85%]">
