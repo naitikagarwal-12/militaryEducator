@@ -48,7 +48,7 @@ const ChatbotButton = () => {
             fixed top-15 left-5 z-100
             p-1 text-lg sm:text-xl rounded-full
             bg-white/30 backdrop-blur-lg
-            border border-white/40
+            border border-white/40 md:hidden
           "
         >
           <IoClose />
