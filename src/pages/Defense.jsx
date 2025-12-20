@@ -1,31 +1,32 @@
 import Button from "../components/Button";
-import MilitaryCards from "../components/MilitaryCards";
+import MilitaryCards from "../components/MilitaryCards.jsx";
 import army from "../assets/defenseLogos/armyLogo.png";
 import navy from "../assets/defenseLogos/navyLogo.png";
 import airForce from "../assets/defenseLogos/airForceLogo.png";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer.jsx";
+import { useNavigate } from "react-router-dom";
 
 const Defense = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section className="bg-[#b7987d] text-black p-5">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="font-bold text-4xl sm:text-5xl mt-4 lg:text-6xl">
+          <h1 className="text-4xl sm:text-5xl mt-4 lg:text-6xl saira-stencil-one">
             Defense System
           </h1>
         </div>
 
-        <div className="flex justify-center items-center">
-          <div className="grid grid-cols-1 md:grid-cols-3 my-7 mt-15 w-[75%] md:w-[85%]">
+        <div className="flex justify-center items-center saira-extra-condensed font-bold">
+          <div className="grid grid-cols-1 md:grid-cols-3 my-7 mt-15 w-[65%] sm:w-[55%] md:w-[85%]">
             <MilitaryCards
-              classname={""}
-              imgClass={"h-50 md:h-40 w-auto"}
+              imgClass={"max-h-40 w-auto"}
               image={navy}
               button={
                 <Button
-                  event={""}
+                  onClick={() => navigate("/navy")}
                   classname={
-                    "text-black bg-[#b7987d] px-5 py-2 text-xl md:text-lg ring-2 ring-black/30"
+                    "text-black bg-[#b7987d] px-5 py-2 text-xl ring-2 ring-black/30"
                   }
                 >
                   Indian Navy
@@ -33,14 +34,13 @@ const Defense = () => {
               }
             />
             <MilitaryCards
-              classname={""}
-              imgClass={"h-50 md:h-40 w-auto"}
+              imgClass={"max-h-40 w-auto"}
               image={army}
               button={
                 <Button
-                  event={""}
+                  onClick={() => navigate("/army")}
                   classname={
-                    "text-black bg-[#b7987d] px-5 py-2 text-xl md:text-lg ring-2 ring-black/30"
+                    "text-black bg-[#b7987d] px-5 py-2 text-xl ring-2 ring-black/30"
                   }
                 >
                   Indian Army
@@ -48,14 +48,13 @@ const Defense = () => {
               }
             />
             <MilitaryCards
-              classname={""}
-              imgClass={"h-50 md:h-40 w-auto"}
+              imgClass={"max-h-40 w-auto"}
               image={airForce}
               button={
                 <Button
-                  event={""}
+                  onClick={() => navigate("/air-force")}
                   classname={
-                    "text-black bg-[#b7987d] px-5 py-2 text-xl md:text-lg ring-2 ring-black/30"
+                    "text-black bg-[#b7987d] px-5 py-2 text-xl ring-2 ring-black/30"
                   }
                 >
                   Indian Air Force

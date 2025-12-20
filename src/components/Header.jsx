@@ -17,10 +17,10 @@ const Header = () => {
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center w-full">
           <div className="p-2 flex justify-center items-center md:gap-3 gap-1">
             <img src={logo} alt="Logo" className="h-13 sm:h-16 w-auto" />
-            <div className="text-lg sm:text-xl md:text-2xl">
-              <p className="text-[#b0be64] font-bold">Military</p>
-              <p className="text-white font-bold">Educator</p>
-            </div>
+            <a href="#" className="text-lg sm:text-xl md:text-2xl saira-stencil-one">
+              <p className="text-[#b0be64]">Military</p> 
+              <p className="text-white">Educator</p>
+            </a>
           </div>
           <div className="hidden rounded-3xl bg-[#d9d9d9] lg:flex border-2 border-[#27395f] max-w-85 items-center">
             <div className="rounded-3xl py-2 px-5 bg-[#5d6532] text-white outline-3 outline-[#27395f]">
@@ -32,10 +32,10 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center gap-2">
+          <div className="flex justify-center items-center gap-2 saira-condensed font-extrabold">
             <Button
               icon={<FaPhone />}
-              event={() => setContactOpen(true)}
+              onClick={() => setContactOpen(true)}
               classname={
                 "bg-[#b0be64] text-xs sm:text-sm lg:text-md border border-[#27395f]"
               }
@@ -44,7 +44,7 @@ const Header = () => {
             </Button>
             <Button
               icon={<FaUser />}
-              event={() => setLoginOpen(true)}
+              onClick={() => setLoginOpen(true)}
               classname={
                 "bg-[#b0be64] text-xs sm:text-sm lg:text-md border border-[#27395f]"
               }

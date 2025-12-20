@@ -1,6 +1,6 @@
 const ContactUs = () => {
   return (
-    <section className="bg-[#0b0b0b] text-white min-h-screen py-6 px-6 md:px-12 lg:px-24 rounded-xl">
+    <section className="bg-[#0b0b0b] text-white py-6 px-6 md:px-12 lg:px-24 rounded-xl">
       <div className="text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold">
           Contact <span className="text-[#b0be64]">Us</span>

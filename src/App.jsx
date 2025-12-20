@@ -1,29 +1,23 @@
-import Footer from "./components/Footer.jsx";
-import Header from "./components/Header.jsx";
-import Navbar from "./components/Navbar.jsx";
-import About from "./pages/About.jsx";
-import Defense from "./pages/Defense.jsx";
-import Home from "./pages/Home.jsx";
-import Model from "./pages/Model.jsx";
-import Services from "./pages/Services.jsx";
-import ChatbotButton from "./components/ChatbotButton.jsx";
-import { FaArrowUpLong } from "react-icons/fa6";
+import { Route, Routes } from "react-router-dom";
+import DashLayout from "./components/layouts/DashLayout.jsx";
+import HomeLayout from "./components/layouts/HomeLayout.jsx";
+import ArmyLayout from "./components/layouts/military/ArmyLayout.jsx";
+import NavyLayout from "./components/layouts/military/NavyLayout.jsx";
+import AirForceLayout from "./components/layouts/military/AirForceLayout.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 function App() {
   return (
-    <>
-      <Home />
-      <About />
-      <Services />
-      <Model />
-      <Defense />
+    <Routes>
+      <Route path="/" element={<DashLayout />}>
+        <Route index element={<HomeLayout />} />
+        <Route path="army" element={<ArmyLayout />} />
+        <Route path="navy" element={<NavyLayout />} />
+        <Route path="air-force" element={<AirForceLayout />} />
+      </Route>
 
-      <ChatbotButton />
-
-      <div className="fixed bottom-0 w-full">
-        <Navbar />
-      </div>
-    </>
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
