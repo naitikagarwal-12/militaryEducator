@@ -1,9 +1,7 @@
-import IndianNavy from '../../../pages/IndianNavy.jsx'
+import ServiceScrollPage from "../../../pages/ServiceScrollPage";
 
-const NavyLayout = () => {
-  return (
-    <IndianNavy/>
-  )
+function NavyLayout() {
+  return <ServiceScrollPage service="navy" />;
 }
 
-export default NavyLayout
+export default NavyLayout;

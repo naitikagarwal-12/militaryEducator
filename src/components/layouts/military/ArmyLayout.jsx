@@ -1,9 +1,7 @@
-import IndianArmy from '../../../pages/IndianArmy.jsx'
+import ServiceScrollPage from "../../../pages/ServiceScrollPage";
 
-const ArmyLayout = () => {
-  return (
-    <IndianArmy/>
-  )
+function ArmyLayout() {
+  return <ServiceScrollPage service="army" />;
 }
 
-export default ArmyLayout
+export default ArmyLayout;
