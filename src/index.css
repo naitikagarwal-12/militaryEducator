@@ -1,22 +1,5 @@
 @import "tailwindcss";
 
-.scrollbar-tactical::-webkit-scrollbar {
-  width: 5px;
-}
-
-.scrollbar-tactical::-webkit-scrollbar-track {
-  background: #111827;
-}
-
-.scrollbar-tactical::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #b0be64, #27395f);
-  border-radius: 30px; 
-}
-
-.scrollbar-tactical::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #d4e157, #1e293b);
-}
-
 .saira-stencil-one {
   font-family: "Saira Stencil One", sans-serif;
 }

@@ -4,7 +4,7 @@ const ContactUs = () => {
   return (
     <div className="bg-[#27395f]">
       <Header />
-      <section className="bg-[#0b0b0b] text-white py-6 px-6 md:px-12 lg:px-24 rounded-xl">
+      <section className="bg-[#0b0b0b]/50 text-white py-6 px-6 md:px-12 lg:px-24 w-full">
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold">
             Contact <span className="text-[#b0be64]">Us</span>
@@ -16,7 +16,7 @@ const ContactUs = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12">
-          <div className="bg-[#121212] rounded-2xl py-2 px-4 shadow-lg">
+          <div className="bg-[#121212]/50 rounded-2xl py-2 px-4 shadow-lg">
             <h2 className="text-xl md:text-2xl font-semibold mb-1">
               Get In Touch
             </h2>
@@ -43,7 +43,7 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="bg-[#121212] rounded-2xl py-2 px-4 shadow-lg">
+          <div className="bg-[#121212]/50 rounded-2xl py-2 px-4 shadow-lg">
             <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
             <form className="space-y-4">
               <input

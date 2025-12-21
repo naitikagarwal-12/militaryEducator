@@ -5,12 +5,13 @@ import Button from "./Button";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { useState } from "react";
 import Login from "../pages/Login";
-import ContactUs from "../pages/ContactUs";
 import { IoClose } from "react-icons/io5";
+import {useNavigate} from "react-router-dom";
 
 const Header = () => {
   const [loginOpen, setLoginOpen] = useState(false);
-  const [contactOpen, setContactOpen] = useState(false);
+  const navigate= useNavigate();
+  
   return (
     <>
       <div className="flex justify-center items-center">
@@ -38,7 +39,7 @@ const Header = () => {
           <div className="flex justify-center items-center gap-2 saira-condensed font-extrabold">
             <Button
               icon={<FaPhone />}
-              onClick={() => setContactOpen(true)}
+              onClick={() => navigate("contact")}
               classname={
                 "bg-[#b0be64] text-xs sm:text-sm lg:text-md border border-[#27395f]"
               }
@@ -58,26 +59,6 @@ const Header = () => {
         </div>
       </div>
       <hr className="w-[95%] md:w-[80%] lg:w-[85%] xl:w-[80%] mx-auto border-t-3 text-white rounded-full" />
-
-      {/* CONTACT MODAL */}
-      {contactOpen && (
-        <div className="fixed inset-0 bg-black/60 z-100 flex justify-center items-center">
-          <div
-            className="relative w-[90%] md:w-[85%] lg:w-[75%] max-h-[70vh] bg-[#0b0f14] ring-2 ring-white/80 rounded-xl flex flex-col"
-          >
-            <button
-              className="absolute top-3 right-3 z-10"
-              onClick={() => setContactOpen(false)}
-            >
-              <IoClose className="text-3xl text-[#27395f] bg-gray-50 hover:bg-gray-200 p-1 rounded-full" />
-            </button>
-
-            <div className="flex-1 overflow-y-auto px-4 py-6 scrollbar-tactical">
-              <ContactUs />
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* LOGIN MODAL */}
       {loginOpen && (
