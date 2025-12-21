@@ -56,7 +56,7 @@ const Model = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center items-center mt-5">
-              <button className="flex justify-center items-center gap-2 font-bold bg-[#b7987d] py-1 rounded-xl text-black ring-2 ring-black text-lg px-4 saira-condensed w-full">
+              <button className="flex justify-center items-center gap-2 glow-btn font-bold bg-[#b7987d] py-1 rounded-lg text-black ring-2 ring-black text-lg px-4 saira-condensed w-[95%]">
                 Download
                 <MdOutlineFileDownload className="text-xl md:text-2xl" />
               </button>

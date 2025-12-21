@@ -1,7 +1,7 @@
 const Button = ({ icon, classname, children, onClick }) => {
   return (
     <div
-      className={`${classname} rounded-lg sm:rounded-xl py-2 px-1 sm:py-1.5 sm:px-3`}
+      className={`${classname} glow-btn rounded-lg sm:rounded-xl py-2 px-1 sm:py-1.5 sm:px-3`}
     >
       <button
         onClick={onClick}

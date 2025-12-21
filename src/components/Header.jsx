@@ -17,17 +17,20 @@ const Header = () => {
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center w-full">
           <div className="p-2 flex justify-center items-center md:gap-3 gap-1">
             <img src={logo} alt="Logo" className="h-13 sm:h-16 w-auto" />
-            <a href="#" className="text-lg sm:text-xl md:text-2xl saira-stencil-one">
-              <p className="text-[#b0be64]">Military</p> 
+            <a
+              href="#"
+              className="text-lg sm:text-xl md:text-2xl saira-stencil-one"
+            >
+              <p className="text-[#b0be64]">Military</p>
               <p className="text-white">Educator</p>
             </a>
           </div>
-          <div className="hidden rounded-3xl bg-[#d9d9d9] lg:flex border-2 border-[#27395f] max-w-85 items-center">
+          <div className="hidden rounded-3xl bg-[#d9d9d9] lg:flex border-2 border-[#27395f] max-w-85 items-center saira-stencil-one">
             <div className="rounded-3xl py-2 px-5 bg-[#5d6532] text-white outline-3 outline-[#27395f]">
               <p>Experience on AR/VR</p>
             </div>
             <div className="flex gap-1 justify-center items-center">
-              <p className="py-1 px-3 text-[#5d6532] font-bold">Download</p>
+              <p className="py-1 px-3 text-[#5d6532]">Download</p>
               <MdOutlineFileDownload className="text-2xl text-[#5d6532]" />
             </div>
           </div>
@@ -58,14 +61,9 @@ const Header = () => {
 
       {/* CONTACT MODAL */}
       {contactOpen && (
-        <div className="fixed inset-0 bg-black/60 z-50 flex justify-center items-center">
+        <div className="fixed inset-0 bg-black/60 z-100 flex justify-center items-center">
           <div
-            className="relative w-[90%] md:w-[85%] lg:w-[75%] 
-                    h-[75vh] 
-                    bg-[#0b0f14] 
-                    ring-2 ring-white/80 
-                    rounded-xl 
-                    flex flex-col"
+            className="relative w-[90%] md:w-[85%] lg:w-[75%] max-h-[70vh] bg-[#0b0f14] ring-2 ring-white/80 rounded-xl flex flex-col"
           >
             <button
               className="absolute top-3 right-3 z-10"
@@ -83,7 +81,7 @@ const Header = () => {
 
       {/* LOGIN MODAL */}
       {loginOpen && (
-        <div className="fixed inset-0 bg-black/60 z-50 flex justify-center items-center">
+        <div className="fixed inset-0 bg-black/60 z-100 flex justify-center items-center">
           <div className="bg-white p-6 lg:p-8 rounded-xl relative w-[80%] md:w-[85%] lg:w-[75%] h-auto">
             <button
               className="absolute top-1 right-2 text-xl"

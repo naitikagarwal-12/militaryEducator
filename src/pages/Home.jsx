@@ -18,7 +18,7 @@ const Home = () => {
             and structured exam preparation for India’s armed forces."
           </p>
           <div className="w-full mt-8 sm:mt-12 flex justify-center">
-            <div className="w-full sm:w-[92%] md:w-[82%] lg:w-[68%] xl:w-[58%] aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.55)] bg-black">
+            <div className="w-full sm:w-[92%] md:w-[85%] aspect-[7/5] sm:aspect-[7/4] md:aspect-[7/3] lg:aspect-[6/2] xl:aspect-16/5 rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.55)] bg-black">
               <video
                 autoPlay
                 loop

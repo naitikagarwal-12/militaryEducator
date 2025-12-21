@@ -14,7 +14,7 @@ const Services = () => {
         </h1>
       </div>
       <div className="my-7 mt-15 flex justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center max-w-[75%] lg:max-w-[90%]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-center max-w-[75%] lg:max-w-[90%]">
           <Card
             image={img3}
             content={

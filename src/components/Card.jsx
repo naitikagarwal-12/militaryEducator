@@ -7,7 +7,7 @@ const Card = ({ image, button, content, heading }) => {
         p-3
         flex flex-col
         ring-2 ring-black/50
-        h-full
+        h-full w-auto
       "
     >
       <img
@@ -30,7 +30,7 @@ const Card = ({ image, button, content, heading }) => {
           p-3
           flex flex-col
           justify-between
-          flex-grow
+          flex-grow-1
         "
       >
         <div>

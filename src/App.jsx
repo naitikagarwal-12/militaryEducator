@@ -5,6 +5,8 @@ import ArmyLayout from "./components/layouts/military/ArmyLayout.jsx";
 import NavyLayout from "./components/layouts/military/NavyLayout.jsx";
 import AirForceLayout from "./components/layouts/military/AirForceLayout.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import "./lenis.js";
+import ContactUs from "./pages/ContactUs.jsx";
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <Route path="navy" element={<NavyLayout />} />
         <Route path="air-force" element={<AirForceLayout />} />
       </Route>
-
+      
+      <Route path="/contact" element={<ContactUs />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
