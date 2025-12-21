@@ -1,9 +1,7 @@
-import IndianAirForce from '../../../pages/IndianAirForce.jsx'
+import ServiceScrollPage from "../../../pages/ServiceScrollPage";
 
-const AirForceLayout = () => {
-  return (
-    <IndianAirForce/>
-  )
+function AirForceLayout() {
+  return <ServiceScrollPage service="airforce" />;
 }
 
-export default AirForceLayout
+export default AirForceLayout;
