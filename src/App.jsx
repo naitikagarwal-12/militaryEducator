@@ -7,6 +7,8 @@ import AirForceLayout from "./components/layouts/military/AirForceLayout.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import "./lenis.js";
 import ContactUs from "./pages/ContactUs.jsx";
+import MockInterview from "./components/MockInterview.jsx";
+import DefenseSuite from "./components/DefenseSuite.jsx";
 
 function App() {
   return (
@@ -16,9 +18,10 @@ function App() {
         <Route path="army" element={<ArmyLayout />} />
         <Route path="navy" element={<NavyLayout />} />
         <Route path="air-force" element={<AirForceLayout />} />
+        <Route path="mock" element={<MockInterview />} />
+        <Route path="defense" element={<DefenseSuite />} />
+        <Route path="contact" element={<ContactUs />} />
       </Route>
-      
-      <Route path="/contact" element={<ContactUs />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

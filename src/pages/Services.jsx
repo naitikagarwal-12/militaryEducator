@@ -4,8 +4,11 @@ import img1 from "../assets/services/img1.jpeg";
 import img2 from "../assets/services/img2.jpeg";
 import img3 from "../assets/services/img3.jpeg";
 import img4 from "../assets/services/img4.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#b7987d] text-black p-5">
       <div className="flex flex-col justify-center items-center">
@@ -23,7 +26,7 @@ const Services = () => {
             heading={"AI Skill-Gap Analyzer"}
             button={
               <Button
-                event={() => {}}
+                onClick={() => {navigate("defense")}}
                 classname={"bg-[#5d6532] ring-2 ring-black/40 mt-5 px-2"}
               >
                 Test Your Skills
@@ -38,7 +41,7 @@ const Services = () => {
             heading={"AR/VR Immersive Learning"}
             button={
               <Button
-                event={() => {}}
+                onClick={() => {navigate("#")}}
                 classname={"bg-[#5d6532] ring-2 ring-black/40 mt-5 px-2"}
               >
                 AR/VR Mode
@@ -54,7 +57,7 @@ const Services = () => {
             heading={"Veteran Mock Interviews & Guidance"}
             button={
               <Button
-                event={() => {}}
+                onClick={() => {navigate("mock")}}
                 classname={"bg-[#5d6532] ring-2 ring-black/40 mt-5 px-2"}
               >
                 Connect
@@ -69,7 +72,7 @@ const Services = () => {
             heading={"Strategic Timeline & Curated Study Hub"}
             button={
               <Button
-                event={() => {}}
+                onClick={() => {navigate("#")}}
                 classname={"bg-[#5d6532] ring-2 ring-black/40 mt-5 px-2"}
               >
                 Explore

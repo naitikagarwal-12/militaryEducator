@@ -55,3 +55,9 @@
     0 0 15px rgba(0, 0, 0, 0.4),
     0 0 22px rgba(176, 190, 100, 0.6);
 }
+
+.download-btn:hover {
+  box-shadow:
+    0 0 12px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(176, 190, 100, 0.6);
+}

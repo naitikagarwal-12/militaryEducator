@@ -3,7 +3,6 @@ import MilitaryCards from "../components/MilitaryCards.jsx";
 import army from "../assets/defenseLogos/armyLogo.png";
 import navy from "../assets/defenseLogos/navyLogo.png";
 import airForce from "../assets/defenseLogos/airForceLogo.png";
-import Footer from "../components/Footer.jsx";
 import { useNavigate } from "react-router-dom";
 
 const Defense = () => {
@@ -63,8 +62,6 @@ const Defense = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 };

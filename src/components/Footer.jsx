@@ -43,7 +43,7 @@ const Footer = () => {
             <p className="text-white">Educator</p>
           </div>
         </div>
-        <p className="text-sm md:text-md py-2 saira-stencil-one text-[#b0be64] text-center px-5">
+        <p className="text-sm md:text-md xl:text-lg py-2 saira-stencil-one text-[#b0be64] text-center px-5">
           "The One-Stop Platform for Tactical Intelligence and Exam Success"
         </p>
       </div>
@@ -189,7 +189,7 @@ const Footer = () => {
           <FaSquareXTwitter className="hover:text-white/60" />
         </div>
       </div>
-      <div className="bg-[#1b273e] p-3 text-white text-sm sm:text-md md:text-lg flex justify-center items-center gap-2 w-full z-10">
+      <div className="bg-[#1b273e] p-3 text-white text-sm sm:text-md md:text-lg flex justify-center items-center gap-2 w-full z-10 saira-stencil-one">
         <p>Copyright</p>
         <span>
           <FaRegCopyright />
