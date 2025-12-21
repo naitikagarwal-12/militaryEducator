@@ -43,7 +43,7 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="bg-[#121212]/50 rounded-2xl py-2 px-4 shadow-lg">
+          <div className="bg-[#121212]/50g rounded-2xl py-2 px-4 shadow-lg">
             <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
             <form className="space-y-4">
               <input
