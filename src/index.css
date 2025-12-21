@@ -38,9 +38,7 @@
   animation: muzzle 0.2s ease-out;
 }
 
-/* ===============================
-   Tactical Glow Effects
-   =============================== */
+/* Tactical Glow Effects */
 .glow-btn {
   transition: all 0.3s ease;
 }
@@ -50,4 +48,10 @@
     0 0 12px rgba(0, 0, 0, 0.4),
     0 0 22px rgba(176, 190, 100, 0.6);
   transform: scale(1.06);
+}
+
+.glow-card {
+    box-shadow:
+    0 0 15px rgba(0, 0, 0, 0.4),
+    0 0 22px rgba(176, 190, 100, 0.6);
 }

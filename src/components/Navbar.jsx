@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="bg-[#1b273e] h-10 flex justify-evenly items-center saira-stencil-one">
         <img src={logo} alt="Logo" className="h-7 sm:h-8 w-auto" />
         {navItems.map((item) => (
-          <div key={item.id} className="text-md lg:text-lg xl:text-xl text-white hover:text-white/70 hover:scale-105 transition-all duration-600">
+          <div key={item.id} className="text-xs md:text-lg xl:text-xl text-white hover:text-white/70 hover:scale-105 transition-all duration-600">
             {item.title}
           </div>
         ))}

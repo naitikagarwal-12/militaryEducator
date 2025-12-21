@@ -6,7 +6,7 @@ const Card = ({ image, button, content, heading }) => {
         rounded-2xl
         p-3
         flex flex-col
-        ring-2 ring-black/50
+        ring-2 ring-black/60 glow-card
         h-full w-auto
       "
     >

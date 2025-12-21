@@ -50,12 +50,12 @@ const Footer = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-2 w-full py-5 lg:mb-5 place-items-center px-15">
         <div className="flex flex-col justify-center items-center md:items-start gap-5 saira-stencil-one">
           <a href="#">
-            <div className="text-white text-3xl md:text-2xl lg:text-2xl hover:scale-105 transition-all duration-300">
+            <div className="text-white text-2xl hover:scale-105 transition-all duration-300">
               <span className="hover:text-white/70">Home</span>
             </div>
           </a>
           <a href="#">
-            <div className="text-white text-3xl md:text-2xl lg:text-2xl hover:scale-105 transition-all duration-300">
+            <div className="text-white text-2xl hover:scale-105 transition-all duration-300">
               <span className="hover:text-white/70">About Us</span>
             </div>
           </a>
@@ -63,13 +63,13 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <div
               onClick={() => toggle("services")}
-              className="flex items-center justify-center gap-2 cursor-pointer hover:text-white/70 text-white text-3xl md:text-2xl hover:scale-105 transition-all duration-300"
+              className="flex items-center justify-center gap-2 cursor-pointer hover:text-white/70 text-white text-2xl hover:scale-105 transition-all duration-300"
             >
               <span>Our Services</span>
               <IoMdArrowDropdown
                 className={`text-3xl md:hidden ${
                   active === "services" ? "rotate-180" : "rotate-0"
-                }`}
+                } transition-all duration-300`}
               />
             </div>
 
@@ -82,9 +82,9 @@ const Footer = () => {
                 <li key={s.id} className="text-white">
                   <a
                     href="#"
-                    className="flex items-center gap-2 hover:underline"
+                    className="flex items-center justify-center md:justify-start gap-2 hover:underline"
                   >
-                    <FaArrowRightLong /> {s.title}
+                    <FaArrowRightLong className="hidden md:block" /> {s.title}
                   </a>
                 </li>
               ))}
@@ -96,13 +96,13 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start saira-stencil-one">
             <div
               onClick={() => toggle("defense")}
-              className="flex items-center justify-center gap-2 cursor-pointer hover:text-white/70 text-white text-3xl md:text-2xl hover:scale-105 transition-all duration-300"
+              className="flex items-center justify-center gap-2 cursor-pointer hover:text-white/70 text-white text-2xl hover:scale-105 transition-all duration-300"
             >
               <span>Defense System</span>
               <IoMdArrowDropdown
                 className={`text-3xl md:hidden ${
                   active === "defense" ? "rotate-180" : "rotate-0"
-                }`}
+                } transition-all duration-300`}
               />
             </div>
 
@@ -115,9 +115,9 @@ const Footer = () => {
                 <li key={d.id} className="text-white">
                   <a
                     href="#"
-                    className="flex items-center gap-2 hover:underline"
+                    className="flex items-center justify-center md:justify-start gap-2 hover:underline"
                   >
-                    <FaArrowRightLong /> {d.title}
+                    <FaArrowRightLong className="hidden md:block" /> {d.title}
                   </a>
                 </li>
               ))}
@@ -126,13 +126,13 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start gap-2">
             <div
               onClick={() => toggle("contact")}
-              className="flex items-center justify-center gap-2 cursor-pointer hover:text-white/70 text-white text-3xl md:text-2xl hover:scale-105 transition-all duration-300 saira-stencil-one"
+              className="flex items-center justify-center gap-2 cursor-pointer hover:text-white/70 text-white text-2xl hover:scale-105 transition-all duration-300 saira-stencil-one"
             >
               <span>Contact Us</span>
               <IoMdArrowDropdown
                 className={`text-3xl md:hidden ${
                   active === "contact" ? "rotate-180" : "rotate-0"
-                }`}
+                } transition-all duration-300`}
               />
             </div>
 
@@ -177,7 +177,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-white text-2xl text-center mt-10 md:mt-5 md:w-[30%] lg:hidden saira-condensed">
+      <div className="text-white text-2xl text-center mt-5 md:mt-5 md:w-[30%] lg:hidden saira-condensed">
         <a href="#" className="saira-stencil-one">
           <span>Connect with us</span>
         </a>
