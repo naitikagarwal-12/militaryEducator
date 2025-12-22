@@ -3,7 +3,7 @@ import TacticalReveal from "../components/TacticalReveal";
 
 const About = () => {
   return (
-    <section className="bg-[#5c4e41] text-white py-14 px-6">
+    <section id="about" className="bg-[#5c4e41] text-white py-14 px-6">
       <div className="text-center max-w-3xl mx-auto saira-stencil-one">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl">About Us</h1>
         <p className="text-sm md:text-lg mt-4 opacity-90">

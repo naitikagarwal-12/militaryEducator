@@ -3,7 +3,7 @@ import { GiSupersonicBullet } from "react-icons/gi";
 
 const Model = () => {
   return (
-    <section className="bg-[#5c4e41] text-white p-4">
+    <section id="model" className="bg-[#5c4e41] text-white p-4">
       <div className="flex flex-col justify-center items-center">
         <h1 className="saira-stencil-one text-4xl sm:text-5xl mt-4 lg:text-6xl">
           AR/VR Model

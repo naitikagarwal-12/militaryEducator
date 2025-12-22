@@ -10,7 +10,7 @@ const Services = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-[#b7987d] text-black p-5">
+    <section id="services" className="bg-[#b7987d] text-black p-5">
       <div className="flex flex-col justify-center items-center">
         <h1 className="saira-stencil-one text-4xl sm:text-5xl mt-4 lg:text-6xl">
           Our Services
@@ -81,7 +81,7 @@ const Services = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

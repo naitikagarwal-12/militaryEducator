@@ -22,16 +22,16 @@ const Footer = () => {
   };
 
   const services = [
-    { id: 1, title: "AI Skill-Gap Analyzer" },
-    { id: 2, title: "AR/VR Immersive Learning" },
-    { id: 3, title: "Veteran Connect" },
-    { id: 4, title: "Strategic Timeline & Planner" },
+    { id: 1, title: "AI Skill-Gap Analyzer", link: "/defense" },
+    { id: 2, title: "AR/VR Immersive Learning", link: "/download" },
+    { id: 3, title: "Veteran Connect", link: "/mock" },
+    { id: 4, title: "Strategic Timeline & Planner", link: "/strategy" },
   ];
 
   const defense = [
-    { id: 1, title: "Indian Army, (IA)" },
-    { id: 2, title: "Indian Navy, (IN)" },
-    { id: 3, title: "Indian Air Force, (IAF)" },
+    { id: 1, title: "Indian Army, (IA)", link: "/army" },
+    { id: 2, title: "Indian Navy, (IN)", link: "/navy" },
+    { id: 3, title: "Indian Air Force, (IAF)", link: "/air-force" },
   ];
   return (
     <footer className="flex flex-col justify-center items-center bottom-0 bg-[#27395f] w-full">
@@ -81,7 +81,7 @@ const Footer = () => {
               {services.map((s) => (
                 <li key={s.id} className="text-white">
                   <a
-                    href="#"
+                    href={s.link}
                     className="flex items-center justify-center md:justify-start gap-2 hover:underline"
                   >
                     <FaArrowRightLong className="hidden md:block" /> {s.title}
@@ -114,7 +114,7 @@ const Footer = () => {
               {defense.map((d) => (
                 <li key={d.id} className="text-white">
                   <a
-                    href="#"
+                    href={d.link}
                     className="flex items-center justify-center md:justify-start gap-2 hover:underline"
                   >
                     <FaArrowRightLong className="hidden md:block" /> {d.title}
@@ -128,7 +128,9 @@ const Footer = () => {
               onClick={() => toggle("contact")}
               className="flex items-center justify-center gap-2 cursor-pointer hover:text-white/70 text-white text-2xl hover:scale-105 transition-all duration-300 saira-stencil-one"
             >
-              <span>Contact Us</span>
+              <span>
+                <a href="/contact">Contact Us</a>
+              </span>
               <IoMdArrowDropdown
                 className={`text-3xl md:hidden ${
                   active === "contact" ? "rotate-180" : "rotate-0"
@@ -189,7 +191,7 @@ const Footer = () => {
           <FaSquareXTwitter className="hover:text-white/60" />
         </div>
       </div>
-      <div className="bg-[#1b273e] p-3 text-white text-sm sm:text-md md:text-lg flex justify-center items-center gap-2 w-full z-10 saira-stencil-one">
+      <div className="bg-[#1b273e] p-3 text-white text-xs sm:text-sm md:text-md lg:text-lg flex justify-center items-center gap-2 w-full z-10 saira-stencil-one">
         <p>Copyright</p>
         <span>
           <FaRegCopyright />

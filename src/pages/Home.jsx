@@ -3,7 +3,7 @@ import Header from "../components/Header.jsx";
 
 const Home = () => {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section id="home" className="relative w-full overflow-hidden">
       <div className="absolute inset-x-0 top-0 h-[78%] sm:h-[72%] bg-[#27395f] z-0" />
       <div className="relative z-10">
         <Header />

@@ -10,11 +10,10 @@ const Defense = () => {
 
   return (
     <>
-      <section className="bg-[#b7987d] text-black p-5">
-        {/* HEADING */}
+      <section id="defence" className="bg-[#b7987d] text-black p-5">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-4xl sm:text-5xl mt-4 lg:text-6xl saira-stencil-one">
-            Defense System
+            Defence System
           </h1>
         </div>
 

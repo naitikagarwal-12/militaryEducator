@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DashLayout from "./components/layouts/DashLayout.jsx";
 import HomeLayout from "./components/layouts/HomeLayout.jsx";
 import ArmyLayout from "./components/layouts/military/ArmyLayout.jsx";
@@ -12,18 +12,20 @@ import DefenseSuite from "./components/DefenseSuite.jsx";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<DashLayout />}>
-        <Route index element={<HomeLayout />} />
-        <Route path="army" element={<ArmyLayout />} />
-        <Route path="navy" element={<NavyLayout />} />
-        <Route path="air-force" element={<AirForceLayout />} />
-        <Route path="mock" element={<MockInterview />} />
-        <Route path="defense" element={<DefenseSuite />} />
-        <Route path="contact" element={<ContactUs />} />
-      </Route>
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DashLayout />}>
+          <Route index element={<HomeLayout />} />
+          <Route path="army" element={<ArmyLayout />} />
+          <Route path="navy" element={<NavyLayout />} />
+          <Route path="air-force" element={<AirForceLayout />} />
+          <Route path="mock" element={<MockInterview />} />
+          <Route path="defense" element={<DefenseSuite />} />
+          <Route path="contact" element={<ContactUs />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
